@@ -7,8 +7,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavDirections
+import com.baloot.test.core.util.ThemeUtils
 import com.baloot.test.core.util.localizedContext
 import com.baloot.test.core.util.showLongToast
 import com.baloot.test.core.util.showShortToast
@@ -23,6 +25,8 @@ class MainActivity : AppCompatActivity(),
     MainHelper {
 
     lateinit var binding: ActivityMainBinding
+
+    private val viewModel by viewModels<MainViewModel>()
 
     private val mainNavigationManager by lazy { MainNavigationManager(this) }
 
@@ -46,7 +50,10 @@ class MainActivity : AppCompatActivity(),
 
     private fun initView(savedInstanceState: Bundle?) {
 
-        lightStatusBar()
+        if (viewModel.isDarkTheme())
+            darkStatusBar()
+        else lightStatusBar()
+
         binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
         setContentView(binding.root)
 
@@ -68,6 +75,15 @@ class MainActivity : AppCompatActivity(),
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             view.systemUiVisibility =
                 view.systemUiVisibility or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+    }
+
+    @Suppress("DEPRECATION")
+    private fun darkStatusBar() {
+        val view = window.decorView
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            view.systemUiVisibility =
+                view.systemUiVisibility and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
         }
     }
 
@@ -146,5 +162,11 @@ class MainActivity : AppCompatActivity(),
             if (errorMessage != 0)
                 showLongMessage(errorMessage)
         } else showLongMessage(serverErrorMessage)
+    }
+
+    override fun changeTheme() {
+        val isDarkTheme = viewModel.isDarkTheme()
+        viewModel.changeTheme(!isDarkTheme)
+        ThemeUtils.changeTheme(!isDarkTheme)
     }
 }

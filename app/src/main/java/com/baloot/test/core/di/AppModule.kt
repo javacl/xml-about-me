@@ -31,9 +31,8 @@ class AppModule {
     @Singleton
     @Provides
     fun providePreferencesDataStore(
-        @ApplicationContext context: Context,
-        appDb: AppDb
-    ): PreferencesDataStore = PreferencesDataStore(context, appDb)
+        @ApplicationContext context: Context
+    ): PreferencesDataStore = PreferencesDataStore(context)
 
     @Singleton
     @Provides

@@ -40,6 +40,10 @@ class UserProfileFragment : BaseFragment<FragmentUserProfileBinding>() {
 
         binding.apply {
 
+            ivTheme.setOnClickListener {
+                mainHelper.changeTheme()
+            }
+
             btnAboutMe.setOnClickListener {
                 mainHelper.navigate(UserProfileFragmentDirections.actionUserProfileFragmentToAboutMeSheet())
             }
@@ -55,6 +59,10 @@ class UserProfileFragment : BaseFragment<FragmentUserProfileBinding>() {
             viewModel.userProfile.collect {
                 binding.userProfile = it
                 userProfileSocialNetworkAdapter.submitList(it.socialNetwork)
+            }
+
+            viewModel.getIsDarkThemeFlow.collect {
+                binding.isDarkTheme = it
             }
         }
     }

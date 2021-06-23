@@ -1,5 +1,6 @@
 package com.baloot.test.core.util.binding
 
+import android.graphics.drawable.Drawable
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.AppCompatImageView

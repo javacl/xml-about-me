@@ -5,6 +5,12 @@
 
     <data>
 
+        <import type="com.baloot.test.R" />
+
+        <variable
+            name="isDarkTheme"
+            type="Boolean" />
+
         <variable
             name="userProfile"
             type="com.baloot.test.features.user.data.entities.UserProfileEntity" />
@@ -16,26 +22,40 @@
         android:layout_height="match_parent"
         android:fillViewport="true">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_image"
                 android:layout_width="@dimen/logo_size_normal"
                 android:layout_height="@dimen/logo_size_normal"
                 android:layout_marginTop="@dimen/spacing_4x"
                 android:background="@drawable/bg_surface_oval"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:setIconCircle="@{userProfile.image}" />
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_fullName"
                 style="@style/TextView.Bold.6x.TextPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_base"
                 android:text="@{userProfile.fullName}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_image"
                 tools:text="@string/label_full_name" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_theme"
+                style="@style/ToolbarItem.TextPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:setIcon="@{isDarkTheme ? R.drawable.ic_sun : R.drawable.ic_moon}"
+                tools:src="@drawable/ic_moon" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_socialNetwork"
@@ -44,6 +64,9 @@
                 android:layout_marginTop="@dimen/spacing_4x"
                 android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fullName"
                 tools:itemCount="4"
                 tools:listitem="@layout/item_user_profile_social_network" />
 
@@ -51,9 +74,14 @@
                 android:id="@+id/btn_aboutMe"
                 style="@style/Button.Primary"
                 android:layout_margin="@dimen/spacing_4x"
-                android:text="@string/label_about_me" />
+                android:text="@string/label_about_me"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_socialNetwork"
+                app:layout_constraintVertical_bias="0" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 

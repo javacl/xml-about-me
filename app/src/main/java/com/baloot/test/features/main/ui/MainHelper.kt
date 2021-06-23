@@ -23,4 +23,6 @@ interface MainHelper {
     fun showShortMessage(message: String)
 
     fun showRemoteMessage(serverErrorMessage: String?, errorMessage: Int)
+
+    fun changeTheme()
 }
