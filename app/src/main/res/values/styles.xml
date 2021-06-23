@@ -750,243 +750,243 @@
     </style>
 
     <style name="TextView.Light.1x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.2x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.3x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.4x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.5x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.6x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.1x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.2x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.3x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.4x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.5x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Regular.6x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.1x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.2x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.3x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.4x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.5x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Medium.6x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.1x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.2x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.3x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.4x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.5x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Bold.6x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.1x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.2x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.3x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.4x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.5x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.ExtraBold.6x.Green">
-        <item name="android:textColor">@color/green_00DAA2</item>
+        <item name="android:textColor">?colorGreen</item>
     </style>
 
     <style name="TextView.Light.1x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Light.2x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Light.3x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Light.4x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Light.5x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Light.6x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.1x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.2x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.3x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.4x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.5x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Regular.6x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.1x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.2x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.3x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.4x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.5x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Medium.6x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.1x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.2x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.3x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.4x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.5x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.Bold.6x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.1x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.2x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.3x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.4x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.5x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="TextView.ExtraBold.6x.Red">
-        <item name="android:textColor">@color/red_E64274</item>
+        <item name="android:textColor">?colorRed</item>
     </style>
 
     <style name="BottomNavigation" parent="@style/Widget.MaterialComponents.BottomNavigationView">

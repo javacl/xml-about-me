@@ -31,13 +31,6 @@
     <dimen name="logo_size_normal">120dp</dimen>
     <dimen name="logo_size_large">200dp</dimen>
 
-    <dimen name="spacing_average_1x">2dp</dimen>
-    <dimen name="spacing_average_2x">6dp</dimen>
-    <dimen name="spacing_average_3x">10dp</dimen>
-    <dimen name="spacing_average_4x">14dp</dimen>
-    <dimen name="spacing_average_5x">18dp</dimen>
-    <dimen name="spacing_average_6x">20dp</dimen>
-
     <dimen name="text_1x">10sp</dimen>
     <dimen name="text_2x">12sp</dimen>
     <dimen name="text_3x">14sp</dimen>

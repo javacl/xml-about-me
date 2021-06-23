@@ -8,7 +8,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blue_3861FB</item>
         <item name="colorSecondaryVariant">@color/white_FFFFFF</item>
-        <item name="colorOnSecondary">@color/black_000000</item>
+        <item name="colorOnSecondary">@color/white_FFFFFF</item>
         <!-- Background color. -->
         <item name="android:colorBackground">@color/white_FFFFFF</item>
         <!-- Status bar color. -->
