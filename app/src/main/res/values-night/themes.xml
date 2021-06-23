@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.BalootTest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Bottom sheet theme. -->
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogFragmentTheme</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_3861FB</item>
         <item name="colorPrimaryVariant">@color/black_000000</item>
@@ -26,5 +28,37 @@
         <item name="colorSurface">@color/gray_323546</item>
         <item name="colorGreen">@color/green_00DAA2</item>
         <item name="colorRed">@color/red_E64274</item>
+    </style>
+
+    <style name="BottomSheetDialogFragmentTheme" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_3861FB</item>
+        <item name="colorPrimaryVariant">@color/black_000000</item>
+        <item name="colorOnPrimary">@color/black_000000</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_3861FB</item>
+        <item name="colorSecondaryVariant">@color/black_000000</item>
+        <item name="colorOnSecondary">@color/black_000000</item>
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/black_000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Default font. -->
+        <item name="fontFamily">@font/iran_yekan_regular</item>
+        <!-- Customize your theme here. -->
+        <item name="colorTextPrimary">@color/white_FFFFFF</item>
+        <item name="colorTextPrimaryLight">@color/gray_818A9B</item>
+        <item name="colorTextPrimaryHighLight">@color/gray_323546</item>
+        <item name="colorTextSecondary">@color/white_FFFFFF</item>
+        <item name="colorDivider">@color/gray_323546</item>
+        <item name="colorRipple">@color/blue_3861FB</item>
+        <item name="colorRippleSecondary">@color/white_FFFFFF</item>
+        <item name="colorSurface">@color/gray_323546</item>
+        <item name="colorGreen">@color/green_00DAA2</item>
+        <item name="colorRed">@color/red_E64274</item>
+        <!-- Others. -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|adjustNothing</item>
+        <item name="bottomSheetStyle">@style/BottomSheetDialogFragmentStyle</item>
     </style>
 </resources>

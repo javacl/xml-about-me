@@ -60,6 +60,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "BalootTest-${variant.versionName}-${variant.versionCode}.apk"
+        }
+    }
 }
 
 dependencies {
