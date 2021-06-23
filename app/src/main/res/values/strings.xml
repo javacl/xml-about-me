@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BalootTest</string>
+
+    <string name="error_server">Server Error!</string>
+    <string name="error_general">A problem occurred!</string>
+    <string name="error_connection">Connect to Internet</string>
+
+    <string name="link_github">da</string>
+    <string name="link_gitlab">da</string>
+    <string name="link_telegram">da</string>
+    <string name="link_instagram">da</string>
+
+    <string name="msg_empty_not_allow">This item cannot be empty!</string>
+    <string name="msg_retry">Retry</string>
+
+    <string name="label_articles">Articles</string>
+    <string name="label_user_profile">Profile</string>
+    <string name="label_article">Article</string>
+    <string name="label_full_name">Javad Sadeghi</string>
+    <string name="label_github">Github</string>
+    <string name="label_gitlab">Gitlab</string>
+    <string name="label_telegram">Telegram</string>
+    <string name="label_instagram">Instagram</string>
+</resources>

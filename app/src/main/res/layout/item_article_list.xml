@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.baloot.test.features.article.data.entities.ArticleEntity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_background_ripple"
+        android:padding="@dimen/spacing_4x">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_surface_medium_radius"
+            app:layout_constraintDimensionRatio="H,21:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setImageUrlMediumRadius="@{item.urlToImage}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/TextView.Bold.4x.TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{item.title}"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_image"
+            tools:text="Air Travel Returned. So Did Long Lines at Security, Restaurants and Shops." />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_author"
+            style="@style/TextView.Bold.3x.TextPrimaryLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:layout_marginEnd="@dimen/spacing_4x"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{item.author}"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/tv_publishAt"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Alison Sider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_publishAt"
+            style="@style/TextView.Bold.3x.TextPrimaryLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:text="@{item.publishedAt}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="June 18, 2021 9:12 am ET" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

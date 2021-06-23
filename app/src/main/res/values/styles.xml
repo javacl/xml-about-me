@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView">
+        <item name="android:textColor">?colorTextPrimary</item>
+        <item name="android:textColorHint">?colorTextPrimaryHighLight</item>
+        <item name="android:textColorLink">?colorPrimary</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_2x</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="TextView.Light">
+        <item name="fontFamily">@font/iran_yekan_light</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="TextView.Medium">
+        <item name="fontFamily">@font/iran_yekan_medium</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="fontFamily">@font/iran_yekan_bold</item>
+    </style>
+
+    <style name="TextView.ExtraBold">
+        <item name="fontFamily">@font/iran_yekan_extra_bold</item>
+    </style>
+
+    <style name="TextView.Light.1x">
+        <item name="android:textSize">@dimen/text_1x</item>
+    </style>
+
+    <style name="TextView.Light.2x">
+        <item name="android:textSize">@dimen/text_2x</item>
+    </style>
+
+    <style name="TextView.Light.3x">
+        <item name="android:textSize">@dimen/text_3x</item>
+    </style>
+
+    <style name="TextView.Light.4x">
+        <item name="android:textSize">@dimen/text_4x</item>
+    </style>
+
+    <style name="TextView.Light.5x">
+        <item name="android:textSize">@dimen/text_5x</item>
+    </style>
+
+    <style name="TextView.Light.6x">
+        <item name="android:textSize">@dimen/text_6x</item>
+    </style>
+
+    <style name="TextView.Regular.1x">
+        <item name="android:textSize">@dimen/text_1x</item>
+    </style>
+
+    <style name="TextView.Regular.2x">
+        <item name="android:textSize">@dimen/text_2x</item>
+    </style>
+
+    <style name="TextView.Regular.3x">
+        <item name="android:textSize">@dimen/text_3x</item>
+    </style>
+
+    <style name="TextView.Regular.4x">
+        <item name="android:textSize">@dimen/text_4x</item>
+    </style>
+
+    <style name="TextView.Regular.5x">
+        <item name="android:textSize">@dimen/text_5x</item>
+    </style>
+
+    <style name="TextView.Regular.6x">
+        <item name="android:textSize">@dimen/text_6x</item>
+    </style>
+
+    <style name="TextView.Medium.1x">
+        <item name="android:textSize">@dimen/text_1x</item>
+    </style>
+
+    <style name="TextView.Medium.2x">
+        <item name="android:textSize">@dimen/text_2x</item>
+    </style>
+
+    <style name="TextView.Medium.3x">
+        <item name="android:textSize">@dimen/text_3x</item>
+    </style>
+
+    <style name="TextView.Medium.4x">
+        <item name="android:textSize">@dimen/text_4x</item>
+    </style>
+
+    <style name="TextView.Medium.5x">
+        <item name="android:textSize">@dimen/text_5x</item>
+    </style>
+
+    <style name="TextView.Medium.6x">
+        <item name="android:textSize">@dimen/text_6x</item>
+    </style>
+
+    <style name="TextView.Bold.1x">
+        <item name="android:textSize">@dimen/text_1x</item>
+    </style>
+
+    <style name="TextView.Bold.2x">
+        <item name="android:textSize">@dimen/text_2x</item>
+    </style>
+
+    <style name="TextView.Bold.3x">
+        <item name="android:textSize">@dimen/text_3x</item>
+    </style>
+
+    <style name="TextView.Bold.4x">
+        <item name="android:textSize">@dimen/text_4x</item>
+    </style>
+
+    <style name="TextView.Bold.5x">
+        <item name="android:textSize">@dimen/text_5x</item>
+    </style>
+
+    <style name="TextView.Bold.6x">
+        <item name="android:textSize">@dimen/text_6x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x">
+        <item name="android:textSize">@dimen/text_1x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x">
+        <item name="android:textSize">@dimen/text_2x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x">
+        <item name="android:textSize">@dimen/text_3x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x">
+        <item name="android:textSize">@dimen/text_4x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x">
+        <item name="android:textSize">@dimen/text_5x</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x">
+        <item name="android:textSize">@dimen/text_6x</item>
+    </style>
+
+    <style name="TextView.Light.1x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.2x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.3x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.4x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.5x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.6x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.1x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.2x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.3x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.4x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.5x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.6x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.1x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.2x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.3x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.4x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.5x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.6x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.1x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.2x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.3x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.4x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.5x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.6x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.TextPrimary">
+        <item name="android:textColor">?colorTextPrimary</item>
+    </style>
+
+    <style name="TextView.Light.1x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.2x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.3x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.4x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.5x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.6x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.1x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.2x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.3x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.4x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.5x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Regular.6x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.1x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.2x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.3x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.4x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.5x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Medium.6x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.1x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.2x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.3x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.4x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.5x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Bold.6x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.TextPrimaryLight">
+        <item name="android:textColor">?colorTextPrimaryLight</item>
+    </style>
+
+    <style name="TextView.Light.1x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.2x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.3x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.4x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.5x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.6x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.1x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.2x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.3x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.4x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.5x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Regular.6x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.1x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.2x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.3x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.4x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.5x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Medium.6x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.1x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.2x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.3x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.4x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.5x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Bold.6x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.TextPrimaryHighLight">
+        <item name="android:textColor">?colorTextPrimaryHighLight</item>
+    </style>
+
+    <style name="TextView.Light.1x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.2x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.3x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.4x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.5x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.6x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.1x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.2x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.3x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.4x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.5x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Regular.6x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.1x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.2x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.3x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.4x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.5x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Medium.6x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.1x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.2x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.3x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.4x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.5x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Bold.6x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.TextSecondary">
+        <item name="android:textColor">?colorTextSecondary</item>
+    </style>
+
+    <style name="TextView.Light.1x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.2x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.3x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.4x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.5x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.6x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.1x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.2x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.3x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.4x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.5x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Regular.6x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.1x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.2x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.3x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.4x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.5x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Medium.6x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.1x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.2x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.3x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.4x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.5x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Bold.6x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.Primary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextView.Light.1x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.2x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.3x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.4x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.5x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.6x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.1x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.2x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.3x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.4x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.5x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Regular.6x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.1x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.2x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.3x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.4x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.5x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Medium.6x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.1x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.2x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.3x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.4x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.5x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Bold.6x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.Green">
+        <item name="android:textColor">@color/green_00DAA2</item>
+    </style>
+
+    <style name="TextView.Light.1x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Light.2x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Light.3x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Light.4x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Light.5x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Light.6x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.1x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.2x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.3x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.4x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.5x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Regular.6x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.1x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.2x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.3x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.4x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.5x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Medium.6x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.1x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.2x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.3x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.4x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.5x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.Bold.6x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.1x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.2x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.3x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.4x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.5x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="TextView.ExtraBold.6x.Red">
+        <item name="android:textColor">@color/red_E64274</item>
+    </style>
+
+    <style name="BottomNavigation" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/color_bottom_navigation_view_selector</item>
+        <item name="itemTextColor">@color/color_bottom_navigation_view_selector</item>
+        <item name="backgroundTint">?android:colorBackground</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+        <item name="menu">@menu/menu_bottom_nav</item>
+        <item name="itemRippleColor">?colorPrimary</item>
+        <item name="itemTextAppearanceActive">@style/TextView.Bold.1x</item>
+        <item name="itemTextAppearanceInactive">@style/TextView.Bold.1x</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Button" parent="TextView.Bold.3x.TextSecondary">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">@dimen/spacing_3x</item>
+        <item name="android:paddingBottom">@dimen/spacing_3x</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button.Primary">
+        <item name="android:background">@drawable/bg_primary_medium_radius_ripple</item>
+    </style>
+
+    <style name="ProgressBar" parent="android:Widget.Material.Light.ProgressBar.Small.Inverse">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateTint">?colorPrimary</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">?colorDivider</item>
+    </style>
+
+    <style name="ToolbarItem">
+        <item name="android:layout_height">@dimen/toolbar_size</item>
+        <item name="android:layout_width">@dimen/toolbar_size</item>
+        <item name="android:padding">@dimen/spacing_4x</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ToolbarItem.TextPrimary">
+        <item name="tint">?colorTextPrimary</item>
+    </style>
+
+</resources>

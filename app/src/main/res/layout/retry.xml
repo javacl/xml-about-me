@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.baloot.test.core.util.NetworkCallback" />
+
+        <variable
+            name="serverErrorMessage"
+            type="String" />
+
+        <variable
+            name="errorMessage"
+            type="Integer" />
+
+        <variable
+            name="errorIcon"
+            type="int" />
+
+        <variable
+            name="show"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_surface"
+        android:onClick="@{()->callback.retry()}"
+        app:setVisibilityGone="@{!show}">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_retry"
+            android:layout_width="@dimen/spacing_5x"
+            android:layout_height="@dimen/spacing_5x"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginBottom="@dimen/spacing_base"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_retry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_retry"
+            app:setIcon="@{errorIcon}"
+            app:srcCompat="@drawable/ic_general_error"
+            app:tint="?colorRed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Regular.3x.TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:layout_marginEnd="@dimen/spacing_3x"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_retry"
+            app:layout_constraintEnd_toStartOf="@+id/btn_retry"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/iv_retry"
+            app:layout_constraintTop_toTopOf="@+id/btn_retry"
+            app:setResourceErrorMessage="@{errorMessage}"
+            app:setServerErrorMessage="@{serverErrorMessage}"
+            tools:text="@string/error_general" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_retry"
+            style="@style/TextView.Regular.3x.Red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:layout_marginEnd="@dimen/spacing_3x"
+            android:background="@drawable/bg_surface_ripple"
+            android:padding="@dimen/spacing_base"
+            android:text="@string/msg_retry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_marginTop="@dimen/spacing_2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_retry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

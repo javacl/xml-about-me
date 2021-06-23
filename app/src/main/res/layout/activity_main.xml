@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".features.main.ui.MainActivity"
+    tools:ignore="FragmentTagUsage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:colorBackground">
+
+        <FrameLayout
+            android:id="@+id/container_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/nav_empty"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/container_articleList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bnv_main"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/nav_articleList"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/container_userProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bnv_main"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/nav_userProfile"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="false" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_divider_main"
+            style="@style/HorizontalDivider"
+            android:layout_above="@+id/bnv_main"
+            android:visibility="gone" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bnv_main"
+            style="@style/BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</layout>
