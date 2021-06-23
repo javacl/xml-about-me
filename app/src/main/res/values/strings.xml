@@ -5,10 +5,11 @@
     <string name="error_general">A problem occurred!</string>
     <string name="error_connection">Connect to Internet</string>
 
-    <string name="link_github">da</string>
-    <string name="link_gitlab">da</string>
-    <string name="link_telegram">da</string>
-    <string name="link_instagram">da</string>
+    <string name="link_github">https://github.com/javacl</string>
+    <string name="link_gitlab">https://gitlab.com/javacl</string>
+    <string name="link_linkedin">https://www.linkedin.com/in/javad-sadeghi-4b6826165</string>
+    <string name="link_telegram">https://telegram.me/javacl_sadeghi</string>
+    <string name="link_instagram">http://instagram.com/_u/javaclsadeghi</string>
 
     <string name="msg_empty_not_allow">This item cannot be empty!</string>
     <string name="msg_retry">Retry</string>
@@ -19,6 +20,10 @@
     <string name="label_full_name">Javad Sadeghi</string>
     <string name="label_github">Github</string>
     <string name="label_gitlab">Gitlab</string>
+    <string name="label_linkedin">Linkedin</string>
     <string name="label_telegram">Telegram</string>
     <string name="label_instagram">Instagram</string>
+    <string name="label_about_me">About Me</string>
+
+    <string name="txt_about_me">Hello.\n\nI,m Javad Sadeghi.\n\nAndroid Developer &amp; Guitar Lover\n\nMy Birthday : 1996 august 22\n\nLive in Mashhad</string>
 </resources>

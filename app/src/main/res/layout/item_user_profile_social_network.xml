@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.baloot.test.features.user.data.entities.UserProfileSocialNetworkEntity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_background_ripple"
+        android:padding="@dimen/spacing_4x">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Bold.3x.TextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.title}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/label_github" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/spacing_3x"
+            android:layout_height="@dimen/spacing_3x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="?colorTextPrimary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

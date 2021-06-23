@@ -24,7 +24,13 @@
     <fragment
         android:id="@+id/navigation_userProfileFragment"
         android:name="com.baloot.test.features.user.ui.UserProfileFragment"
-        android:label="fragment_user_profile" />
+        android:label="fragment_user_profile">
+
+        <action
+            android:id="@+id/action_userProfileFragment_to_aboutMeSheet"
+            app:destination="@id/navigation_aboutMeSheet" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_articleListFragment"
@@ -47,5 +53,10 @@
             app:argType="integer" />
 
     </fragment>
+
+    <dialog
+        android:id="@+id/navigation_aboutMeSheet"
+        android:name="com.baloot.test.features.user.ui.AboutMeSheet"
+        android:label="sheet_about_me" />
 
 </navigation>
