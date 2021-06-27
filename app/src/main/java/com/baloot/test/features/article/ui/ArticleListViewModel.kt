@@ -1,5 +1,6 @@
 package com.baloot.test.features.article.ui
 
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.baloot.test.core.util.viewModel.BaseViewModel
 import com.baloot.test.features.article.domain.GetArticleListLocal
@@ -19,7 +20,7 @@ class ArticleListViewModel @Inject constructor(
     val currentPage
         get() = _currentPage
 
-    val articleList = getArticleListLocal()
+    val articleList = getArticleListLocal().asLiveData(coroutineContext)
 
     init {
         getData()

@@ -11,7 +11,6 @@ import com.baloot.test.databinding.FragmentArticleListBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -65,12 +64,9 @@ class ArticleListFragment : BaseFragment<FragmentArticleListBinding>() {
                 hideLoading()
         })
 
-        lifecycleScope.launch {
-
-            viewModel.articleList.collect {
-                articleListAdapter.submitList(it)
-            }
-        }
+        viewModel.articleList.observe(viewLifecycleOwner , {
+            articleListAdapter.submitList(it)
+        })
     }
 
     private fun initRecyclerView() {
