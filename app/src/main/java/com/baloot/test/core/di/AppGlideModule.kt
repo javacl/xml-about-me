@@ -19,7 +19,8 @@ import java.util.concurrent.TimeUnit
 class AppGlideModule : AppGlideModule() {
 
     private val timeout: Long = 30L
-    private val cacheSize: Long = 20 * 1024 * 1024
+    private val byteSize : Long = 1024L
+    private val cacheSize: Long = 20 * byteSize * byteSize
 
     override fun applyOptions(context: Context, builder: GlideBuilder) {
         builder.setMemoryCache(LruResourceCache(cacheSize))

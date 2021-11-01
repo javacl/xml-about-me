@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -15,13 +14,10 @@ import com.baloot.test.core.util.localizedContext
 import com.baloot.test.core.util.showLongToast
 import com.baloot.test.core.util.showShortToast
 import com.baloot.test.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(),
-    BottomNavigationView.OnNavigationItemSelectedListener,
-    BottomNavigationView.OnNavigationItemReselectedListener,
     MainHelper {
 
     lateinit var binding: ActivityMainBinding
@@ -62,8 +58,14 @@ class MainActivity : AppCompatActivity(),
         mainNavigationManager.initDestinationChangedListener()
 
         binding.bnvMain.apply {
-            setOnNavigationItemSelectedListener(this@MainActivity)
-            setOnNavigationItemReselectedListener(this@MainActivity)
+            setOnItemSelectedListener {
+                mainNavigationManager.switchTab(it.itemId)
+                return@setOnItemSelectedListener true
+            }
+            setOnItemReselectedListener {
+                mainNavigationManager.scrollToTop()
+                mainNavigationManager.clearStack()
+            }
         }
     }
 
@@ -109,16 +111,6 @@ class MainActivity : AppCompatActivity(),
 
     override fun onBackPressed() {
         mainNavigationManager.onBackPressed()
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        mainNavigationManager.switchTab(item.itemId)
-        return true
-    }
-
-    override fun onNavigationItemReselected(item: MenuItem) {
-        mainNavigationManager.scrollToTop()
-        mainNavigationManager.clearStack()
     }
 
     override fun navigate(direction: NavDirections) {

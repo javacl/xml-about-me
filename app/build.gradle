@@ -145,3 +145,7 @@ dependencies {
     api "com.jakewharton.timber:timber:4.7.1"
     implementation "com.github.fondesa:recycler-view-divider:3.5.0"
 }
+
+kapt {
+    correctErrorTypes = true
+}

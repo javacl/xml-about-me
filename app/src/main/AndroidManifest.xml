@@ -17,7 +17,8 @@
         android:theme="@style/Theme.BalootTest"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".features.main.ui.MainActivity">
+        <activity android:name=".features.main.ui.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
