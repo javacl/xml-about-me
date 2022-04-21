@@ -6,6 +6,7 @@ import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.baloot.test.R
@@ -30,7 +31,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
     private val navEmptyController by lazy {
         mainActivity.findNavController(R.id.nav_empty).apply {
             graph = navInflater.inflate(R.navigation.main_navigation).apply {
-                startDestination = startDestinations.getValue(R.id.navigation_emptyFragment)
+                setStartDestination(startDestinations.getValue(R.id.navigation_emptyFragment))
             }
         }
     }
@@ -38,7 +39,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
     private val navArticleListController by lazy {
         mainActivity.findNavController(R.id.nav_articleList).apply {
             graph = navInflater.inflate(R.navigation.main_navigation).apply {
-                startDestination = startDestinations.getValue(R.id.navigation_articleListFragment)
+                setStartDestination(startDestinations.getValue(R.id.navigation_articleListFragment))
             }
         }
     }
@@ -46,7 +47,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
     private val navUserProfileController by lazy {
         mainActivity.findNavController(R.id.nav_userProfile).apply {
             graph = navInflater.inflate(R.navigation.main_navigation).apply {
-                startDestination = startDestinations.getValue(R.id.navigation_userProfileFragment)
+                setStartDestination(startDestinations.getValue(R.id.navigation_userProfileFragment))
             }
         }
     }
@@ -83,9 +84,15 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         if (navEmptyControllerIsCreated)
             outState.putBundle(KEY_EMPTY_NAVIGATION_STATE, navEmptyController.saveState())
         if (navArticleListControllerIsCreated)
-            outState.putBundle(KEY_ARTICLE_LIST_NAVIGATION_STATE, navArticleListController.saveState())
+            outState.putBundle(
+                KEY_ARTICLE_LIST_NAVIGATION_STATE,
+                navArticleListController.saveState()
+            )
         if (navUserProfileControllerIsCreated)
-            outState.putBundle(KEY_USER_PROFILE_NAVIGATION_STATE, navUserProfileController.saveState())
+            outState.putBundle(
+                KEY_USER_PROFILE_NAVIGATION_STATE,
+                navUserProfileController.saveState()
+            )
 
         outState.putSerializable(KEY_CURRENT_NAV_ID, currentNavigationId)
     }
@@ -202,30 +209,33 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
 
     fun clearStack(tag: MainNavigationTag = MainNavigationTag.Default) {
         when (tag) {
-            MainNavigationTag.Default -> currentNavigationController?.graph?.startDestination?.let {
+            MainNavigationTag.Default -> currentNavigationController?.graph?.findStartDestination()
+                ?.let {
+                    currentNavigationController?.popBackStack(
+                        it.id,
+                        false
+                    )
+                }
+            MainNavigationTag.Empty -> navEmptyController.graph.findStartDestination().let {
                 currentNavigationController?.popBackStack(
-                    it,
+                    it.id,
                     false
                 )
             }
-            MainNavigationTag.Empty -> navEmptyController.graph.startDestination.let {
-                currentNavigationController?.popBackStack(
-                    it,
-                    false
-                )
-            }
-            MainNavigationTag.ArticleList -> navArticleListController.graph.startDestination.let {
-                currentNavigationController?.popBackStack(
-                    it,
-                    false
-                )
-            }
-            MainNavigationTag.UserProfile -> navUserProfileController.graph.startDestination.let {
-                currentNavigationController?.popBackStack(
-                    it,
-                    false
-                )
-            }
+            MainNavigationTag.ArticleList -> navArticleListController.graph.findStartDestination()
+                .let {
+                    currentNavigationController?.popBackStack(
+                        it.id,
+                        false
+                    )
+                }
+            MainNavigationTag.UserProfile -> navUserProfileController.graph.findStartDestination()
+                .let {
+                    currentNavigationController?.popBackStack(
+                        it.id,
+                        false
+                    )
+                }
         }
     }
 
@@ -300,10 +310,12 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         private const val KEY_EMPTY_NAVIGATION_CREATED = "key_empty_navigation_created"
         private const val KEY_EMPTY_NAVIGATION_STATE = "key_empty_navigation_state"
 
-        private const val KEY_ARTICLE_LIST_NAVIGATION_CREATED = "key_article_list_navigation_created"
+        private const val KEY_ARTICLE_LIST_NAVIGATION_CREATED =
+            "key_article_list_navigation_created"
         private const val KEY_ARTICLE_LIST_NAVIGATION_STATE = "key_article_list_navigation_state"
 
-        private const val KEY_USER_PROFILE_NAVIGATION_CREATED = "key_user_profile_navigation_created"
+        private const val KEY_USER_PROFILE_NAVIGATION_CREATED =
+            "key_user_profile_navigation_created"
         private const val KEY_USER_PROFILE_NAVIGATION_STATE = "key_user_profile_navigation_state"
 
         private const val KEY_CURRENT_NAV_ID = "key_current_navigation_id"
