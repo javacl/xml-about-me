@@ -8,13 +8,11 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.baloot.test.R
 import com.baloot.test.core.util.addVerticalDividerSpacing4x
-import com.baloot.test.core.util.autoCleared
 import com.baloot.test.core.util.disableAnimationChanges
 import com.baloot.test.core.util.scrollToTop
 import com.baloot.test.core.util.ui.BaseFragment
 import com.baloot.test.databinding.FragmentUserProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -22,7 +20,7 @@ class UserProfileFragment : BaseFragment<FragmentUserProfileBinding>() {
 
     private val viewModel by viewModels<UserProfileViewModel>()
 
-    private var userProfileSocialNetworkAdapter by autoCleared<UserProfileSocialNetworkAdapter>()
+    private lateinit var userProfileSocialNetworkAdapter: UserProfileSocialNetworkAdapter
 
     override val layoutId: Int
         get() = R.layout.fragment_user_profile

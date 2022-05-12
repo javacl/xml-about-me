@@ -18,7 +18,7 @@ class ArticleListFragment : BaseFragment<FragmentArticleListBinding>() {
 
     private val viewModel by viewModels<ArticleListViewModel>()
 
-    private var articleListAdapter by autoCleared<ArticleListAdapter>()
+    private lateinit var articleListAdapter: ArticleListAdapter
 
     private lateinit var scrollListener: EndlessRecyclerOnScrollListener
 
