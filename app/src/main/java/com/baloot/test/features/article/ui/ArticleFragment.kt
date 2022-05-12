@@ -11,7 +11,6 @@ import com.baloot.test.core.util.ui.BaseFragment
 import com.baloot.test.databinding.FragmentArticleBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @FlowPreview

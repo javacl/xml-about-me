@@ -2,9 +2,7 @@ package com.baloot.test.features.article.data.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import se.ansman.kotshi.JsonSerializable
 
-@JsonSerializable
 @Entity
 data class ArticleEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,

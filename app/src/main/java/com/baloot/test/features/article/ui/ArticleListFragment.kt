@@ -50,7 +50,7 @@ class ArticleListFragment : BaseFragment<FragmentArticleListBinding>() {
 
     private fun initObservation() {
 
-        viewModel.networkViewState.observe(viewLifecycleOwner, {
+        viewModel.networkViewState.observe(viewLifecycleOwner) {
 
             binding.networkViewState = it
 
@@ -62,11 +62,11 @@ class ArticleListFragment : BaseFragment<FragmentArticleListBinding>() {
 
             if (it.showError)
                 hideLoading()
-        })
+        }
 
-        viewModel.articleList.observe(viewLifecycleOwner , {
+        viewModel.articleList.observe(viewLifecycleOwner) {
             articleListAdapter.submitList(it)
-        })
+        }
     }
 
     private fun initRecyclerView() {

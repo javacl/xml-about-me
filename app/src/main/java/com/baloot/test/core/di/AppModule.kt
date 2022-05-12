@@ -7,8 +7,8 @@ import com.baloot.test.core.api.HeaderInterceptor
 import com.baloot.test.core.api.TLSSocketFactory
 import com.baloot.test.core.db.AppDb
 import com.baloot.test.core.preferences.PreferencesDataStore
-import com.baloot.test.core.util.ConverterUtils
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,7 +37,9 @@ class AppModule {
     @Singleton
     @Provides
     fun provideMoshi(): Moshi {
-        return ConverterUtils.jsonConverter
+        return Moshi.Builder()
+            .addLast(KotlinJsonAdapterFactory())
+            .build()
     }
 
     @Singleton
