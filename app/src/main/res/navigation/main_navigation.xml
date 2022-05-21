@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_emptyFragment"
-        android:name="com.baloot.test.features.main.ui.EmptyFragment"
+        android:name="com.about.me.features.main.ui.EmptyFragment"
         android:label="fragment_empty">
 
         <action
@@ -18,12 +18,12 @@
 
     <fragment
         android:id="@+id/navigation_splashFragment"
-        android:name="com.baloot.test.features.user.ui.SplashFragment"
+        android:name="com.about.me.features.user.ui.SplashFragment"
         android:label="fragment_splash" />
 
     <fragment
         android:id="@+id/navigation_userProfileFragment"
-        android:name="com.baloot.test.features.user.ui.UserProfileFragment"
+        android:name="com.about.me.features.user.ui.UserProfileFragment"
         android:label="fragment_user_profile">
 
         <action
@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@+id/navigation_articleListFragment"
-        android:name="com.baloot.test.features.article.ui.ArticleListFragment"
+        android:name="com.about.me.features.article.ui.ArticleListFragment"
         android:label="fragment_article_list">
 
         <action
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/navigation_articleFragment"
-        android:name="com.baloot.test.features.article.ui.ArticleFragment"
+        android:name="com.about.me.features.article.ui.ArticleFragment"
         android:label="fragment_article">
 
         <argument
@@ -56,7 +56,7 @@
 
     <dialog
         android:id="@+id/navigation_aboutMeSheet"
-        android:name="com.baloot.test.features.user.ui.AboutMeSheet"
+        android:name="com.about.me.features.user.ui.AboutMeSheet"
         android:label="sheet_about_me" />
 
 </navigation>

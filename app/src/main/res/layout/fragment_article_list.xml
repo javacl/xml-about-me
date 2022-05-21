@@ -7,11 +7,11 @@
 
         <variable
             name="networkCallback"
-            type="com.baloot.test.core.util.NetworkCallback" />
+            type="com.about.me.core.util.NetworkCallback" />
 
         <variable
             name="networkViewState"
-            type="com.baloot.test.core.util.viewModel.BaseViewModel.NetworkViewState" />
+            type="com.about.me.core.util.viewModel.BaseViewModel.NetworkViewState" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

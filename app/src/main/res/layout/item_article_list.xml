@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.baloot.test.features.article.data.entities.ArticleEntity" />
+            type="com.about.me.features.article.data.entities.ArticleEntity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

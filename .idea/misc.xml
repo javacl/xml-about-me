@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_article.xml" value="0.15489130434782608" />
+        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_article_list.xml" value="0.15489130434782608" />
         <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_splash.xml" value="0.3625" />
         <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/item_article_list.xml" value="0.3625" />
         <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/item_user_profile_social_network.xml" value="0.3625" />
