@@ -77,7 +77,7 @@ class AppModule {
     @Provides
     fun provideDb(@ApplicationContext context: Context): AppDb {
         return Room
-            .databaseBuilder(context, AppDb::class.java, "baloot.test.db")
+            .databaseBuilder(context, AppDb::class.java, "about.me.db")
             .fallbackToDestructiveMigration()
             .build()
     }

@@ -22,7 +22,7 @@ class PreferencesDataStore constructor(
         val keyIsDarkTheme = booleanPreferencesKey("key_is_dark_theme")
     }
 
-    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "baloot.test.preferences.data.store")
+    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "about.me.preferences.data.store")
 
     val getIsDarkThemeFlow: Flow<Boolean> = context.dataStore.data
         .catch { exception ->

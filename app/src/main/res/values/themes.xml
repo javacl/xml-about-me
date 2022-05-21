@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.BalootTest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.AboutMe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Bottom sheet theme. -->
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogFragmentTheme</item>
         <!-- Primary brand color. -->
@@ -14,7 +14,7 @@
         <!-- Background color. -->
         <item name="android:colorBackground">@color/white_FFFFFF</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Default font. -->
         <item name="fontFamily">@font/iran_yekan_regular</item>
         <!-- Customize your theme here. -->
