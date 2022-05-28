@@ -6,8 +6,6 @@ interface MainHelper {
 
     fun navigate(direction: NavDirections)
 
-    fun navigateSinglePage(direction: NavDirections, finish: Boolean = false)
-
     fun clearStack(tag: MainNavigationTag = MainNavigationTag.Default)
 
     fun goBack(tag: MainNavigationTag = MainNavigationTag.Default, number: Int = 1)

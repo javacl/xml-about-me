@@ -16,14 +16,23 @@
         android:theme="@style/Theme.AboutMe"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".features.main.ui.MainActivity"
+
+        <activity
+            android:name=".features.user.ui.StartActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".features.main.ui.MainActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

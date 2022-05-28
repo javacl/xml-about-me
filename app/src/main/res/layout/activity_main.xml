@@ -11,20 +11,6 @@
         android:background="?android:colorBackground">
 
         <FrameLayout
-            android:id="@+id/container_empty"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <fragment
-                android:id="@+id/nav_empty"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:defaultNavHost="false" />
-
-        </FrameLayout>
-
-        <FrameLayout
             android:id="@+id/container_articleList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,8 +53,7 @@
             style="@style/BottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:visibility="gone" />
+            android:layout_alignParentBottom="true" />
 
     </RelativeLayout>
 

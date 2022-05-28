@@ -19,22 +19,13 @@ import kotlinx.coroutines.launch
 class MainNavigationManager(private val mainActivity: MainActivity) {
 
     private val startDestinations = mapOf(
-        R.id.navigation_emptyFragment to R.id.navigation_emptyFragment,
         R.id.navigation_articleListFragment to R.id.navigation_articleListFragment,
         R.id.navigation_userProfileFragment to R.id.navigation_userProfileFragment
     )
 
-    private var currentNavigationId: Int = R.id.navigation_emptyFragment
+    private var currentNavigationId: Int = R.id.navigation_articleListFragment
     private var currentNavigationController: NavController? = null
 
-    private var navEmptyControllerIsCreated = false
-    private val navEmptyController by lazy {
-        mainActivity.findNavController(R.id.nav_empty).apply {
-            graph = navInflater.inflate(R.navigation.main_navigation).apply {
-                setStartDestination(startDestinations.getValue(R.id.navigation_emptyFragment))
-            }
-        }
-    }
     private var navArticleListControllerIsCreated = false
     private val navArticleListController by lazy {
         mainActivity.findNavController(R.id.nav_articleList).apply {
@@ -52,37 +43,33 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         }
     }
 
-    private val emptyContainer: View by lazy { mainActivity.binding.containerEmpty }
     private val articleListContainer: View by lazy { mainActivity.binding.containerArticleList }
     private val userProfileContainer: View by lazy { mainActivity.binding.containerUserProfile }
     private val viewDividerMain: View by lazy { mainActivity.binding.viewDividerMain }
     private val bnvMain: BottomNavigationView by lazy { mainActivity.binding.bnvMain }
 
     fun initTabManager() {
-        currentNavigationController = navEmptyController
-        navigateSinglePage(EmptyFragmentDirections.actionEmptyFragmentToSplashFragment())
+        currentNavigationController = navArticleListController
+        switchTab(bnvMain.selectedItemId)
     }
 
     fun initDestinationChangedListener() {
-        navEmptyController.addOnDestinationChangedListener { _, destination, _ ->
-            when (destination.id) {
-                R.id.navigation_emptyFragment -> {
-                    switchTab(bnvMain.selectedItemId)
-                }
-                else -> {
-                    switchTab(startDestinations.getValue(R.id.navigation_emptyFragment))
-                }
+        navArticleListController.addOnDestinationChangedListener { _, _, arguments ->
+            arguments?.let {
+                bottomNavigationVisibility(it.getBoolean(KEY_HIDE_BOTTOM_NAVIGATION, false))
+            }
+        }
+        navUserProfileController.addOnDestinationChangedListener { _, _, arguments ->
+            arguments?.let {
+                bottomNavigationVisibility(it.getBoolean(KEY_HIDE_BOTTOM_NAVIGATION, false))
             }
         }
     }
 
     fun onSaveInstanceState(outState: Bundle) {
-        outState.putBoolean(KEY_EMPTY_NAVIGATION_CREATED, navEmptyControllerIsCreated)
         outState.putBoolean(KEY_ARTICLE_LIST_NAVIGATION_CREATED, navArticleListControllerIsCreated)
         outState.putBoolean(KEY_USER_PROFILE_NAVIGATION_CREATED, navUserProfileControllerIsCreated)
 
-        if (navEmptyControllerIsCreated)
-            outState.putBundle(KEY_EMPTY_NAVIGATION_STATE, navEmptyController.saveState())
         if (navArticleListControllerIsCreated)
             outState.putBundle(
                 KEY_ARTICLE_LIST_NAVIGATION_STATE,
@@ -99,12 +86,9 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
 
     fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         savedInstanceState?.let {
-            navEmptyControllerIsCreated = it.getBoolean(KEY_EMPTY_NAVIGATION_CREATED)
             navArticleListControllerIsCreated = it.getBoolean(KEY_ARTICLE_LIST_NAVIGATION_CREATED)
             navUserProfileControllerIsCreated = it.getBoolean(KEY_USER_PROFILE_NAVIGATION_CREATED)
 
-            if (navEmptyControllerIsCreated)
-                navEmptyController.restoreState(it.getBundle(KEY_EMPTY_NAVIGATION_STATE))
             if (navArticleListControllerIsCreated)
                 navArticleListController.restoreState(it.getBundle(KEY_ARTICLE_LIST_NAVIGATION_STATE))
             if (navUserProfileControllerIsCreated)
@@ -118,13 +102,6 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
     @Suppress("DEPRECATION")
     fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         currentNavigationController?.let {
-            val emptyNavHostFragment =
-                mainActivity.supportFragmentManager.findFragmentById(R.id.nav_empty) as NavHostFragment?
-            emptyNavHostFragment?.let {
-                it.childFragmentManager.fragments.forEach { fragment ->
-                    fragment.onActivityResult(requestCode, resultCode, data)
-                }
-            }
             val articleListNavHostFragment =
                 mainActivity.supportFragmentManager.findFragmentById(R.id.nav_articleList) as NavHostFragment?
             articleListNavHostFragment?.let {
@@ -148,7 +125,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
 
     fun onBackPressed() {
         currentNavigationController?.let {
-            if (it.currentDestination == null || it.currentDestination?.id == R.id.navigation_splashFragment) mainActivity.finish()
+            if (it.currentDestination == null) mainActivity.finish()
             else if (
                 it.currentDestination == null || it.currentDestination?.id ==
                 startDestinations.getValue(currentNavigationId)
@@ -168,8 +145,6 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         when (tag) {
             MainNavigationTag.Default -> {
             }
-            MainNavigationTag.Empty -> {
-            }
             MainNavigationTag.ArticleList -> switchToArticleListFragment()
             MainNavigationTag.UserProfile -> switchToUserProfileFragment()
         }
@@ -179,20 +154,15 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         currentNavigationId = tabId
 
         when (tabId) {
-            R.id.navigation_emptyFragment -> {
-                currentNavigationController = navEmptyController
-                navEmptyControllerIsCreated = true
-                invisibleTabContainerExcept(emptyContainer, true)
-            }
             R.id.navigation_articleListFragment -> {
                 currentNavigationController = navArticleListController
                 navArticleListControllerIsCreated = true
-                invisibleTabContainerExcept(articleListContainer, false)
+                tabContainerExceptVisibility(articleListContainer)
             }
             R.id.navigation_userProfileFragment -> {
                 currentNavigationController = navUserProfileController
                 navUserProfileControllerIsCreated = true
-                invisibleTabContainerExcept(userProfileContainer, false)
+                tabContainerExceptVisibility(userProfileContainer)
             }
         }
     }
@@ -216,12 +186,6 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
                         false
                     )
                 }
-            MainNavigationTag.Empty -> navEmptyController.graph.findStartDestination().let {
-                currentNavigationController?.popBackStack(
-                    it.id,
-                    false
-                )
-            }
             MainNavigationTag.ArticleList -> navArticleListController.graph.findStartDestination()
                 .let {
                     currentNavigationController?.popBackStack(
@@ -271,7 +235,6 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
             repeat(number) {
                 when (tag) {
                     MainNavigationTag.Default -> onBackPressed()
-                    MainNavigationTag.Empty -> navEmptyController.popBackStack()
                     MainNavigationTag.ArticleList -> navArticleListController.popBackStack()
                     MainNavigationTag.UserProfile -> navUserProfileController.popBackStack()
                 }
@@ -279,12 +242,13 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         }
     }
 
-    private fun invisibleTabContainerExcept(container: View, hideNavigation: Boolean) {
-        emptyContainer.visibility = View.GONE
+    private fun tabContainerExceptVisibility(container: View) {
         articleListContainer.visibility = View.GONE
         userProfileContainer.visibility = View.GONE
-
         container.visibility = View.VISIBLE
+    }
+
+    private fun bottomNavigationVisibility(hideNavigation: Boolean) {
         if (hideNavigation) {
             viewDividerMain.visibility = View.GONE
             bnvMain.visibility = View.GONE
@@ -292,7 +256,6 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
             viewDividerMain.visibility = View.VISIBLE
             bnvMain.visibility = View.VISIBLE
         }
-
     }
 
     fun navigate(directions: NavDirections) {
@@ -301,15 +264,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         }
     }
 
-    fun navigateSinglePage(directions: NavDirections, finish: Boolean = false) {
-        if (finish) onBackPressed()
-        safeNavigate(navEmptyController, directions)
-    }
-
     companion object {
-        private const val KEY_EMPTY_NAVIGATION_CREATED = "key_empty_navigation_created"
-        private const val KEY_EMPTY_NAVIGATION_STATE = "key_empty_navigation_state"
-
         private const val KEY_ARTICLE_LIST_NAVIGATION_CREATED =
             "key_article_list_navigation_created"
         private const val KEY_ARTICLE_LIST_NAVIGATION_STATE = "key_article_list_navigation_state"
@@ -319,5 +274,7 @@ class MainNavigationManager(private val mainActivity: MainActivity) {
         private const val KEY_USER_PROFILE_NAVIGATION_STATE = "key_user_profile_navigation_state"
 
         private const val KEY_CURRENT_NAV_ID = "key_current_navigation_id"
+
+        const val KEY_HIDE_BOTTOM_NAVIGATION = "hide_bottom_navigation"
     }
 }

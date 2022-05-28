@@ -1,23 +1,21 @@
 package com.about.me.features.main.ui
 
-import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavDirections
 import com.about.me.core.util.ThemeUtils
-import com.about.me.core.util.localizedContext
 import com.about.me.core.util.showLongToast
 import com.about.me.core.util.showShortToast
+import com.about.me.core.util.ui.BaseActivity
 import com.about.me.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(),
+class MainActivity : BaseActivity(),
     MainHelper {
 
     lateinit var binding: ActivityMainBinding
@@ -25,15 +23,6 @@ class MainActivity : AppCompatActivity(),
     private val viewModel by viewModels<MainViewModel>()
 
     private val mainNavigationManager by lazy { MainNavigationManager(this) }
-
-    override fun attachBaseContext(context: Context) {
-        super.attachBaseContext(localizedContext(context))
-    }
-
-    override fun onStart() {
-        super.onStart()
-        localizedContext(this)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -99,6 +88,7 @@ class MainActivity : AppCompatActivity(),
         mainNavigationManager.onRestoreInstanceState(savedInstanceState)
     }
 
+    @Deprecated("Deprecated in Java")
     @Suppress("DEPRECATION")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -115,10 +105,6 @@ class MainActivity : AppCompatActivity(),
 
     override fun navigate(direction: NavDirections) {
         mainNavigationManager.navigate(direction)
-    }
-
-    override fun navigateSinglePage(direction: NavDirections, finish: Boolean) {
-        mainNavigationManager.navigateSinglePage(direction, finish)
     }
 
     override fun clearStack(tag: MainNavigationTag) {

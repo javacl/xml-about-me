@@ -6,22 +6,6 @@
     tools:ignore="InvalidNavigation">
 
     <fragment
-        android:id="@+id/navigation_emptyFragment"
-        android:name="com.about.me.features.main.ui.EmptyFragment"
-        android:label="fragment_empty">
-
-        <action
-            android:id="@+id/action_emptyFragment_to_splashFragment"
-            app:destination="@id/navigation_splashFragment" />
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_splashFragment"
-        android:name="com.about.me.features.user.ui.SplashFragment"
-        android:label="fragment_splash" />
-
-    <fragment
         android:id="@+id/navigation_userProfileFragment"
         android:name="com.about.me.features.user.ui.UserProfileFragment"
         android:label="fragment_user_profile">

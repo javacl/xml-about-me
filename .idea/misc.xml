@@ -11,7 +11,10 @@
         <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/item_user_profile_social_network.xml" value="0.3625" />
         <entry key="..\:/work/android/git/about-me/app/src/main/res/drawable/ic_logo.xml" value="0.1815" />
         <entry key="..\:/work/android/git/about-me/app/src/main/res/drawable/ic_user_profile.xml" value="0.1815" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_splash.xml" value="0.34195402298850575" />
+        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_main.xml" value="0.2875905797101449" />
+        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_splash.xml" value="0.1762917933130699" />
+        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_start.xml" value="0.1762917933130699" />
+        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_splash.xml" value="0.3089430894308943" />
         <entry key="..\:/work/android/git/about-me/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3405" />
         <entry key="..\:/work/android/git/about-me/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3405" />
       </map>
