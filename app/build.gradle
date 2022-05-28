@@ -118,7 +118,7 @@ dependencies {
     implementation "com.github.bumptech.glide:okhttp3-integration:$glide_version"
 
     // Coroutine
-    def coroutines_version = "1.6.1"
+    def coroutines_version = "1.6.2"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
