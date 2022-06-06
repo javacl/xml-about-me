@@ -45,8 +45,7 @@
         <View
             android:id="@+id/view_divider_main"
             style="@style/HorizontalDivider"
-            android:layout_above="@+id/bnv_main"
-            android:visibility="gone" />
+            android:layout_above="@+id/bnv_main" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_main"
