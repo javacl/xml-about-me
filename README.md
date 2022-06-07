@@ -27,7 +27,7 @@ Clean MVVM has become one of the standard architectures around which large Andro
    * Data binding
 
 <p align="center">
- <img src='https://user-images.githubusercontent.com/45559398/172439412-ff023c0c-a662-4b13-8956-6f54105a65aa.gif' width='300'>
+ <img src='https://user-images.githubusercontent.com/45559398/172485205-6fa4e496-4661-49ff-90f1-7bacf2ea529a.gif' width='300'>
 </p>
   
  <p align="center">
