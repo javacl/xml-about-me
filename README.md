@@ -29,6 +29,5 @@ Clean MVVM has become one of the standard architectures around which large Andro
   <img src='https://user-images.githubusercontent.com/45559398/172236255-e9c6da3f-9935-4fe1-9f3d-15098fa14764.jpg' width='240'>
   <img src='https://user-images.githubusercontent.com/45559398/172236265-61289ee3-dcd1-4f7e-8b46-415cc9d24f4c.jpg' width='240'>
 </p>
-![video_2022-06-07_21-04-37_AdobeExpress](https://user-images.githubusercontent.com/45559398/172435696-0449dee2-da50-47fc-8afa-98aaf4e7f0cb.gif)
 
 ### I hope you found it useful. ❤️
