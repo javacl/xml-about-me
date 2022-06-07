@@ -22,6 +22,7 @@ Clean MVVM has become one of the standard architectures around which large Andro
    * DataStore
    * ViewModel
    * Hilt
+   * Data binding
 
  <p align="left">
   <img src='https://user-images.githubusercontent.com/45559398/172236237-a2f6b801-d114-4e59-94fa-bb80dc9eec4f.jpg' width='240'>
