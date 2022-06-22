@@ -3,6 +3,7 @@ package com.about.me.core.di
 import android.content.Context
 import androidx.room.Room
 import com.about.me.BuildConfig
+import com.about.me.core.api.DefaultIfNullFactory
 import com.about.me.core.api.HeaderInterceptor
 import com.about.me.core.api.TLSSocketFactory
 import com.about.me.core.db.AppDb
@@ -38,6 +39,7 @@ class AppModule {
     @Provides
     fun provideMoshi(): Moshi {
         return Moshi.Builder()
+            .add(DefaultIfNullFactory())
             .addLast(KotlinJsonAdapterFactory())
             .build()
     }
