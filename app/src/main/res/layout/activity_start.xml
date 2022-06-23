@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".features.user.ui.StartActivity">
+        tools:context=".features.main.ui.StartActivity">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/spacing_zero"

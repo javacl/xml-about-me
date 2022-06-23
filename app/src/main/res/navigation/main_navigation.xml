@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_userProfileFragment"
-        android:name="com.about.me.features.user.ui.UserProfileFragment"
+        android:name="xml.about.me.features.user.ui.UserProfileFragment"
         android:label="fragment_user_profile">
 
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/navigation_articleListFragment"
-        android:name="com.about.me.features.article.ui.ArticleListFragment"
+        android:name="xml.about.me.features.article.ui.ArticleListFragment"
         android:label="fragment_article_list">
 
         <action
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/navigation_articleFragment"
-        android:name="com.about.me.features.article.ui.ArticleFragment"
+        android:name="xml.about.me.features.article.ui.ArticleFragment"
         android:label="fragment_article">
 
         <argument
@@ -40,7 +40,7 @@
 
     <dialog
         android:id="@+id/navigation_aboutMeSheet"
-        android:name="com.about.me.features.user.ui.AboutMeSheet"
+        android:name="xml.about.me.features.user.ui.AboutMeSheet"
         android:label="sheet_about_me" />
 
 </navigation>

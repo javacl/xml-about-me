@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.about.me.features.article.data.entities.ArticleEntity" />
+            type="xml.about.me.features.article.data.entities.ArticleEntity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

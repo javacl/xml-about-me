@@ -7,11 +7,11 @@
 
         <variable
             name="networkCallback"
-            type="com.about.me.core.util.NetworkCallback" />
+            type="xml.about.me.core.util.NetworkCallback" />
 
         <variable
             name="networkViewState"
-            type="com.about.me.core.util.viewModel.BaseViewModel.NetworkViewState" />
+            type="xml.about.me.core.util.viewModel.BaseViewModel.NetworkViewState" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

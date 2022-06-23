@@ -20,7 +20,7 @@ project.ext {
     versionPatch = 0
     minimumSdkVersion = 21
     compileAndTargetSdkVersion = 32
-    appName = "com.about.me"
+    appName = "xml.about.me"
 }
 
 android {
@@ -62,7 +62,7 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "AboutMe-Xml-${variant.versionName}-${variant.versionCode}.apk"
+            outputFileName = "Xml-AboutMe-${variant.versionName}-${variant.versionCode}.apk"
         }
     }
 }

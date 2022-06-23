@@ -5,7 +5,7 @@
 
     <data>
 
-        <import type="com.about.me.R" />
+        <import type="xml.about.me.R" />
 
         <variable
             name="isDarkTheme"
@@ -13,7 +13,7 @@
 
         <variable
             name="userProfile"
-            type="com.about.me.features.user.data.entities.UserProfileEntity" />
+            type="xml.about.me.features.user.data.entities.UserProfileEntity" />
     </data>
 
     <androidx.core.widget.NestedScrollView

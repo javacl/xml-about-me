@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.about.me.features.user.data.entities.UserProfileSocialNetworkEntity" />
+            type="xml.about.me.features.user.data.entities.UserProfileSocialNetworkEntity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

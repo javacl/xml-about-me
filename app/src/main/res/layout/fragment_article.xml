@@ -7,7 +7,7 @@
 
         <variable
             name="article"
-            type="com.about.me.features.article.data.entities.ArticleEntity" />
+            type="xml.about.me.features.article.data.entities.ArticleEntity" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

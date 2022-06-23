@@ -7,7 +7,7 @@
 
         <variable
             name="callback"
-            type="com.about.me.core.util.NetworkCallback" />
+            type="xml.about.me.core.util.NetworkCallback" />
 
         <variable
             name="serverErrorMessage"

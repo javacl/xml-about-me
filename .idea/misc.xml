@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/activity_main.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_article.xml" value="0.15489130434782608" />
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_article_list.xml" value="0.15489130434782608" />
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/fragment_splash.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/item_article_list.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/BalootTest/app/src/main/res/layout/item_user_profile_social_network.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/drawable/divider_vertical_spacing_4x.xml" value="0.2135" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/drawable/ic_logo.xml" value="0.1815" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/drawable/ic_user_profile.xml" value="0.1815" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_main.xml" value="0.2875905797101449" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_splash.xml" value="0.1762917933130699" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/activity_start.xml" value="0.1762917933130699" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_article.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_article_list.xml" value="0.1762917933130699" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_splash.xml" value="0.3089430894308943" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/fragment_user_profile.xml" value="0.21331521739130435" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/item_user_profile_social_network.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/layout/retry.xml" value="0.3625" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/menu/menu_bottom_nav.xml" value="0.21944444444444444" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3405" />
-        <entry key="..\:/work/android/git/about-me/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3405" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/drawable/bg_surface_medium_radius.xml" value="0.1665" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/layout/fragment_article.xml" value="0.3625" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/layout/fragment_user_profile.xml" value="0.2509057971014493" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/layout/item_article_list.xml" value="0.3625" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/layout/view_toolbar_back.xml" value="0.3625" />
-        <entry key="..\:/work/git/about-me/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3105" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
