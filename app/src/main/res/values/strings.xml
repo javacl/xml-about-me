@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Javad-xml</string>
+    <string name="app_name">AboutMe-Xml</string>
 
     <string name="error_server">Server Error!</string>
     <string name="error_general">A problem occurred!</string>
