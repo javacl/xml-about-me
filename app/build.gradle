@@ -62,7 +62,7 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "AboutMe-${variant.versionName}-${variant.versionCode}.apk"
+            outputFileName = "AboutMe-Xml-${variant.versionName}-${variant.versionCode}.apk"
         }
     }
 }
@@ -78,7 +78,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
 
     // Architecture Components
-    def life_cycle_version = "2.5.0-rc01"
+    def life_cycle_version = "2.5.0-rc02"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$life_cycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$life_cycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$life_cycle_version"
