@@ -10,6 +10,8 @@ This is a sample project. 😜
 
 Clean MVVM has become one of the standard architectures around which large Android projects are developed.
 
+If you want to see the compose version of this project, refer to this link --->  [Click here](https://github.com/javacl/compose-about-me)
+
 ### The basic flow looks like this 😎
 
 <p align="center">
